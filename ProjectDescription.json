@@ -1,0 +1,166 @@
+{
+  "ProjectName": "Learning",
+  "DLSVersion_LastSaved": "2.1.4",
+  "DLSVersion_EarliestCompatible": "2.0.0",
+  "CreationTime": "2025-04-16T16:13:40.853-05:00",
+  "LastSaveTime": "2025-04-26T12:49:01.326-05:00",
+  "Prefs_MainPinNamesDisplayMode": 2,
+  "Prefs_ChipPinNamesDisplayMode": 2,
+  "Prefs_GridDisplayMode": 1,
+  "Prefs_Snapping": 2,
+  "Prefs_StraightWires": 0,
+  "Prefs_SimPaused": true,
+  "Prefs_SimTargetStepsPerSecond": 1000,
+  "Prefs_SimStepsPerClockTick": 5,
+  "AllCustomChipNames":[
+    "NOT",
+    "AND",
+    "OR",
+    "XOR",
+    "NOR",
+    "XNOR",
+    "D-Latch",
+    "MEM-16",
+    "DECODER-2",
+    "MEM-1",
+    "MEM-256",
+    "AND-2",
+    "MEM-256x8",
+    "NAND-3",
+    "JK-FLIP-FLOP",
+    "COUNTER-8",
+    "NOT-8",
+    "ZERO-MEM",
+    "COLORTEST",
+    "AND-4",
+    "COUNTER-1",
+    "COUNTER-4",
+    "NOT-4",
+    "COUNTER-12",
+    "HALF-ADDER",
+    "FULL-ADDER",
+    "BYTE-ADDER",
+    "XOR-4",
+    "MUX-8x1",
+    "AND-8",
+    "AND-2x4",
+    "AND-1x4",
+    "MULTI-2x4",
+    "MULTI-4x8",
+    "HALF-SUB",
+    "FULL-SUB",
+    "BYTE-SUBBER",
+    "ALU-8",
+    "OR-8",
+    "XOR-8x1",
+    "MUX-64x8",
+    "XOR-8",
+    "HALF-BYTE-ADDER",
+    "LOW-SIGNAL",
+    "HIGH-SIGNAL",
+    "CPU-8",
+    "3-STATE BYTE-BUFFER",
+    "COUNTER-2",
+    "MUX-16x8",
+    "ZERO-IMPL",
+    "PASS-THROUGH"
+  ],
+  "StarredList":[
+    {
+      "Name":"BASIC",
+      "IsCollection":true
+    },
+    {
+      "Name":"IN/OUT",
+      "IsCollection":true
+    },
+    {
+      "Name":"MERGE/SPLIT",
+      "IsCollection":true
+    },
+    {
+      "Name":"BUS",
+      "IsCollection":true
+    },
+    {
+      "Name":"DISPLAY",
+      "IsCollection":true
+    },
+    {
+      "Name":"MEMORY",
+      "IsCollection":true
+    },
+    {
+      "Name":"LOGIC",
+      "IsCollection":true
+    },
+    {
+      "Name":"MATH",
+      "IsCollection":true
+    },
+    {
+      "Name":"COUNTER",
+      "IsCollection":true
+    },
+    {
+      "Name":"OTHER",
+      "IsCollection":true
+    },
+    {
+      "Name":"ZERO-IMPL",
+      "IsCollection":false
+    }
+  ],
+  "ChipCollections":[
+    {
+      "Chips":["CLOCK","PULSE","3-STATE BUFFER","3-STATE BYTE-BUFFER","PASS-THROUGH"],
+      "IsToggledOpen":false,
+      "Name":"BASIC"
+    },
+    {
+      "Chips":["KEY","LOW-SIGNAL","HIGH-SIGNAL","IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8"],
+      "IsToggledOpen":false,
+      "Name":"IN/OUT"
+    },
+    {
+      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","DECODER-2","MUX-64x8","MUX-16x8","MUX-8x1"],
+      "IsToggledOpen":false,
+      "Name":"MERGE/SPLIT"
+    },
+    {
+      "Chips":["BUS-1","BUS-4","BUS-8"],
+      "IsToggledOpen":false,
+      "Name":"BUS"
+    },
+    {
+      "Chips":["7-SEGMENT","DOT DISPLAY","RGB DISPLAY","LED"],
+      "IsToggledOpen":false,
+      "Name":"DISPLAY"
+    },
+    {
+      "Chips":["ROM 256×16","ZERO-MEM","MEM-256x8","MEM-256","MEM-16","MEM-1","JK-FLIP-FLOP","D-Latch"],
+      "IsToggledOpen":false,
+      "Name":"MEMORY"
+    },
+    {
+      "Chips":["XOR-8x1","XOR-8","OR-8","AND-8","NOT-8","XOR-4","AND-4","NOT-4","AND-2x4","AND-2","AND-1x4","NAND-3","XNOR","NOR","NAND","XOR","OR","AND","NOT"],
+      "IsToggledOpen":false,
+      "Name":"LOGIC"
+    },
+    {
+      "Chips":["ALU-8","MULTI-4x8","MULTI-2x4","BYTE-ADDER","BYTE-SUBBER","HALF-BYTE-ADDER","FULL-ADDER","FULL-SUB","HALF-ADDER","HALF-SUB"],
+      "IsToggledOpen":false,
+      "Name":"MATH"
+    },
+    {
+      "Chips":["COUNTER-12","COUNTER-8","COUNTER-4","COUNTER-2","COUNTER-1"],
+      "IsToggledOpen":false,
+      "Name":"COUNTER"
+    },
+    {
+      "Chips":["COLORTEST","CPU-8","ZERO-IMPL"],
+      "IsToggledOpen":true,
+      "Name":"OTHER"
+    }
+  ]
+}
