@@ -1,16 +1,16 @@
 {
-  "ProjectName": "Learning",
+  "ProjectName": "8-Bit-CPU",
   "DLSVersion_LastSaved": "2.1.4",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-04-16T16:13:40.853-05:00",
-  "LastSaveTime": "2025-04-26T12:49:01.326-05:00",
+  "LastSaveTime": "2025-04-26T20:49:17.733-05:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 1,
   "Prefs_Snapping": 2,
   "Prefs_StraightWires": 0,
-  "Prefs_SimPaused": true,
-  "Prefs_SimTargetStepsPerSecond": 1000,
+  "Prefs_SimPaused": false,
+  "Prefs_SimTargetStepsPerSecond": 30,
   "Prefs_SimStepsPerClockTick": 5,
   "AllCustomChipNames":[
     "NOT",
@@ -56,14 +56,27 @@
     "MUX-64x8",
     "XOR-8",
     "HALF-BYTE-ADDER",
-    "LOW-SIGNAL",
-    "HIGH-SIGNAL",
+    "LOW",
+    "HIGH",
     "CPU-8",
     "3-STATE BYTE-BUFFER",
     "COUNTER-2",
     "MUX-16x8",
-    "ZERO-IMPL",
-    "PASS-THROUGH"
+    "RAM-256x8",
+    "PASS",
+    "SWITCH",
+    "REG-4",
+    "REG-8",
+    "REG-16",
+    "REG-1",
+    "MUX-24x8",
+    "MUX-8x24",
+    "CONTROL-UNIT",
+    "REGISTER-UNIT",
+    "SWITCH-5",
+    "AND-8x1",
+    "BYTE-GATE",
+    "MUX-3x1"
   ],
   "StarredList":[
     {
@@ -105,25 +118,21 @@
     {
       "Name":"OTHER",
       "IsCollection":true
-    },
-    {
-      "Name":"ZERO-IMPL",
-      "IsCollection":false
     }
   ],
   "ChipCollections":[
     {
-      "Chips":["CLOCK","PULSE","3-STATE BUFFER","3-STATE BYTE-BUFFER","PASS-THROUGH"],
+      "Chips":["CLOCK","PULSE","3-STATE BUFFER","3-STATE BYTE-BUFFER","PASS"],
       "IsToggledOpen":false,
       "Name":"BASIC"
     },
     {
-      "Chips":["KEY","LOW-SIGNAL","HIGH-SIGNAL","IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8"],
+      "Chips":["KEY","LOW","HIGH","IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8"],
       "IsToggledOpen":false,
       "Name":"IN/OUT"
     },
     {
-      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","DECODER-2","MUX-64x8","MUX-16x8","MUX-8x1"],
+      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","DECODER-2","MUX-64x8","MUX-24x8","MUX-16x8","MUX-8x1","MUX-8x24","MUX-3x1"],
       "IsToggledOpen":false,
       "Name":"MERGE/SPLIT"
     },
@@ -138,12 +147,12 @@
       "Name":"DISPLAY"
     },
     {
-      "Chips":["ROM 256×16","ZERO-MEM","MEM-256x8","MEM-256","MEM-16","MEM-1","JK-FLIP-FLOP","D-Latch"],
+      "Chips":["ROM 256×16","RAM-256x8","ZERO-MEM","MEM-256x8","MEM-256","MEM-16","MEM-1","REG-16","REG-8","REG-4","REG-1","REGISTER-UNIT","JK-FLIP-FLOP","D-Latch"],
       "IsToggledOpen":false,
       "Name":"MEMORY"
     },
     {
-      "Chips":["XOR-8x1","XOR-8","OR-8","AND-8","NOT-8","XOR-4","AND-4","NOT-4","AND-2x4","AND-2","AND-1x4","NAND-3","XNOR","NOR","NAND","XOR","OR","AND","NOT"],
+      "Chips":["BYTE-GATE","XOR-8x1","XOR-8","AND-8x1","OR-8","AND-8","NOT-8","XOR-4","AND-4","NOT-4","AND-2x4","AND-2","AND-1x4","NAND-3","SWITCH-5","SWITCH","XNOR","NOR","NAND","XOR","OR","AND","NOT"],
       "IsToggledOpen":false,
       "Name":"LOGIC"
     },
@@ -158,7 +167,7 @@
       "Name":"COUNTER"
     },
     {
-      "Chips":["COLORTEST","CPU-8","ZERO-IMPL"],
+      "Chips":["COLORTEST","CONTROL-UNIT","CPU-8"],
       "IsToggledOpen":true,
       "Name":"OTHER"
     }

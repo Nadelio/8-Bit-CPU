@@ -1,9 +1,9 @@
 {
-  "Name": "ZERO-IMPL",
+  "Name": "RAM-256x8",
   "NameLocation": 0,
   "ChipType": 0,
   "Size": {
-    "x": 1.475,
+    "x": 1.925,
     "y": 1.5
   },
   "Colour": {
@@ -60,7 +60,7 @@
   ],
   "OutputPins":[
     {
-      "Name":"OUT",
+      "Name":"DATA",
       "ID":685012432,
       "Position":{
         "x":-1.875,
@@ -71,7 +71,7 @@
       "ValueDisplayMode":1
     },
     {
-      "Name":"OUT",
+      "Name":"ADDR",
       "ID":1881646308,
       "Position":{
         "x":-1.875,
