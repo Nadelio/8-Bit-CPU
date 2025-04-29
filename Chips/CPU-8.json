@@ -4,7 +4,7 @@
   "ChipType": 0,
   "Size": {
     "x": 0.875,
-    "y": 3.5
+    "y": 4.0
   },
   "Colour": {
     "r": 0.467395931,
@@ -76,6 +76,17 @@
       "Position":{
         "x":-2.75,
         "y":4.0625
+      },
+      "BitCount":8,
+      "Colour":0,
+      "ValueDisplayMode":1
+    },
+    {
+      "Name":"COUNTER",
+      "ID":1360815511,
+      "Position":{
+        "x":-17.0,
+        "y":3.3125
       },
       "BitCount":8,
       "Colour":0,
@@ -1466,6 +1477,20 @@
       "ConnectedWireIndex":47,
       "ConnectedWireSegmentIndex":1,
       "Points":[{"x":-7.8125,"y":-3.625},{"x":-7.8125,"y":0.125},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":1034840501,
+        "PinOwnerID":1125790740
+      },
+      "TargetPinAddress":{
+        "PinID":0,
+        "PinOwnerID":1360815511
+      },
+      "ConnectionType":1,
+      "ConnectedWireIndex":31,
+      "ConnectedWireSegmentIndex":0,
+      "Points":[{"x":-18.75,"y":1.875},{"x":-18.75,"y":3.3125},{"x":0.0,"y":0.0}]
     }
   ],
   "Displays": null
