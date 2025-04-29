@@ -1,9 +1,9 @@
 {
-  "ProjectName": "8-Bit-CPU",
+  "ProjectName": "Learning",
   "DLSVersion_LastSaved": "2.1.4",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-04-16T16:13:40.853-05:00",
-  "LastSaveTime": "2025-04-29T09:55:39.413-05:00",
+  "LastSaveTime": "2025-04-29T16:52:12.768-05:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 1,
@@ -77,7 +77,12 @@
     "AND-8x1",
     "BYTE-GATE",
     "MUX-3x1",
-    "RW-REG-8"
+    "RW-REG-8",
+    "D-FLIP-FLOP",
+    "MUX-2x1",
+    "D-LATCH-ENABLE",
+    "D-COUNTER-4",
+    "D-COUNTER-1"
   ],
   "StarredList":[
     {
@@ -137,7 +142,7 @@
       "Name":"IN/OUT"
     },
     {
-      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","DECODER-2","MUX-64x8","MUX-24x8","MUX-16x8","MUX-8x1","MUX-8x24","MUX-3x1"],
+      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","DECODER-2","MUX-64x8","MUX-24x8","MUX-16x8","MUX-8x1","MUX-8x24","MUX-3x1","MUX-2x1"],
       "IsToggledOpen":false,
       "Name":"MERGE/SPLIT"
     },
@@ -167,8 +172,8 @@
       "Name":"MATH"
     },
     {
-      "Chips":["COUNTER-12","COUNTER-8","COUNTER-4","COUNTER-2","COUNTER-1"],
-      "IsToggledOpen":false,
+      "Chips":["COUNTER-12","COUNTER-8","COUNTER-4","COUNTER-2","COUNTER-1","D-COUNTER-4","D-COUNTER-1","D-LATCH-ENABLE","D-FLIP-FLOP"],
+      "IsToggledOpen":true,
       "Name":"COUNTER"
     },
     {
@@ -178,7 +183,7 @@
     },
     {
       "Chips":["COLORTEST"],
-      "IsToggledOpen":false,
+      "IsToggledOpen":true,
       "Name":"OTHER"
     }
   ]
