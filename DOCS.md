@@ -14,8 +14,7 @@ CPU Pins | Operation | Notes |
 3 | Output Register Write | Register will write zero if both pin 3 and 4 are high |
 4 | Output Register Read | Register will read zero if both pin 3 and 4 are high |
 5 | Choose between ALU Register or RAM Register | High is ALU, Low is RAM |
-6 | Read RAM to output bus |  |
-7 | Read ALU to output bus |  |
+6-7 | 0 is nop, 1 is read RAM to output bus, 2 is read ALU to output bus, 3 is read DATA wire into program counter |  |
 
 
 Operand Register is a 4-bit register.\
