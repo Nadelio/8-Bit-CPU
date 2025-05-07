@@ -1,10 +1,14 @@
-`STORE-ALU-HIGH` - 39\
-`STORE-ALU-LOW` - 38\
-`STORE-ALU-OP` - 37\
-`READ-OUTPUT-REG` - 16\
-`STORE-OUTPUT-REG-TO-ALU-HIGH` - 183\
-`STORE-ALU-TO-REG` - 168\
-`JUMP-WITH-STATIC` - 192
+
+Instruction | Bytecode | Assembly |
+----------- | -------- | -------- |
+`STORE-ALU-HIGH` | 39 | `astr r3` |
+`STORE-ALU-LOW` | 38 | `astr r2` |
+`STORE-ALU-OP` | 37 | `astr r1` |
+`READ-OUTPUT-REG` | 16 | `rout` |
+`STORE-OUTPUT-REG-TO-ALU-HIGH` | 183 | `astr r3 r0` |
+`STORE-ALU-TO-REG` | 168 | `ostr r4` |
+`JUMP-WITH-STATIC` | 192 | `jmp <lit>` |
+`JUMP-WITH-DYNAMIC` | 208 | `jmp r0` |
 
 ![CPU-8](CPU-8.png)
 
