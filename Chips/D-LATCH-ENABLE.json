@@ -1,4 +1,5 @@
 {
+  "DLSVersion": "2.1.6",
   "Name": "D-LATCH-ENABLE",
   "NameLocation": 0,
   "ChipType": 0,
@@ -32,7 +33,7 @@
         "y":1.1875
       },
       "BitCount":1,
-      "Colour":2,
+      "Colour":3,
       "ValueDisplayMode":0
     },
     {
@@ -43,7 +44,7 @@
         "y":0.5625
       },
       "BitCount":1,
-      "Colour":1,
+      "Colour":2,
       "ValueDisplayMode":0
     }
   ],
@@ -80,7 +81,7 @@
         "x":-3.2275,
         "y":1.6875
       },
-      "OutputPinColourInfo":[{"PinColour":3,"PinID":1765674930}],
+      "OutputPinColourInfo":[{"PinColour":4,"PinID":1765674930}],
       "InternalData":null
     }
   ],
@@ -125,7 +126,7 @@
       "ConnectionType":0,
       "ConnectedWireIndex":-1,
       "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+      "Points":[{"x":0.0,"y":0.0},{"x":-4.75,"y":2.0625},{"x":-4.75,"y":1.8125},{"x":0.0,"y":0.0}]
     },
     {
       "SourcePinAddress":{
@@ -139,7 +140,7 @@
       "ConnectionType":0,
       "ConnectedWireIndex":-1,
       "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":-4.5625,"y":0.5625},{"x":-4.5625,"y":1.3125},{"x":0.0,"y":0.0}]
+      "Points":[{"x":0.0,"y":0.0},{"x":-4.5625,"y":0.5625},{"x":-4.5625,"y":1.5625},{"x":0.0,"y":0.0}]
     },
     {
       "SourcePinAddress":{

@@ -1,4 +1,5 @@
 {
+  "DLSVersion": "2.1.6",
   "Name": "D-COUNTER-1",
   "NameLocation": 0,
   "ChipType": 0,
@@ -43,7 +44,7 @@
         "y":1.75
       },
       "BitCount":1,
-      "Colour":3,
+      "Colour":4,
       "ValueDisplayMode":0
     },
     {
@@ -54,7 +55,7 @@
         "y":1.1875
       },
       "BitCount":1,
-      "Colour":2,
+      "Colour":3,
       "ValueDisplayMode":0
     },
     {
@@ -65,7 +66,7 @@
         "y":0.625
       },
       "BitCount":1,
-      "Colour":1,
+      "Colour":2,
       "ValueDisplayMode":0
     }
   ],
@@ -102,7 +103,7 @@
         "x":-0.7525,
         "y":1.125
       },
-      "OutputPinColourInfo":[{"PinColour":4,"PinID":428603398}],
+      "OutputPinColourInfo":[{"PinColour":5,"PinID":428603398}],
       "InternalData":null
     },
     {
@@ -113,7 +114,7 @@
         "x":-4.6525,
         "y":1.4375
       },
-      "OutputPinColourInfo":[{"PinColour":2,"PinID":1011620104}],
+      "OutputPinColourInfo":[{"PinColour":3,"PinID":1011620104}],
       "InternalData":null
     },
     {
