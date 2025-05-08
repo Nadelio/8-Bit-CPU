@@ -29,7 +29,7 @@ Instruction | Bytecode | Assembly |
 ### Registers
 Assembly Registers | Informal Names | Size | Perms | Bytecode Value |
 ------------------ | -------------- | ---- | ----- | -------------- |
- `r0` | Output Register | 1 byte | Read/Write | 16 |
+ `r0` | Output Register | 1 byte | Read/Write | 16/8 |
  `r1` | ALU OP Register | 4 bits | Write | 33 |
  `r2` | ALU Low Register | 1 byte | Write | 34 |
  `r3` | ALU High Register | 1 byte | Write | 35 |
