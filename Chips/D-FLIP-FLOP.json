@@ -1,4 +1,5 @@
 {
+  "DLSVersion": "2.1.6",
   "Name": "D-FLIP-FLOP",
   "NameLocation": 0,
   "ChipType": 0,
@@ -32,7 +33,7 @@
         "y":-0.1875
       },
       "BitCount":1,
-      "Colour":1,
+      "Colour":2,
       "ValueDisplayMode":0
     }
   ],
@@ -74,24 +75,13 @@
     },
     {
       "Name":"NOT",
-      "ID":339550672,
-      "Label":"",
-      "Position":{
-        "x":-0.9525,
-        "y":-0.1875
-      },
-      "OutputPinColourInfo":[{"PinColour":1,"PinID":1913880116}],
-      "InternalData":null
-    },
-    {
-      "Name":"NOT",
       "ID":152343941,
       "Label":"",
       "Position":{
-        "x":-4.0775,
+        "x":-3.8275,
         "y":-0.1875
       },
-      "OutputPinColourInfo":[{"PinColour":1,"PinID":1913880116}],
+      "OutputPinColourInfo":[{"PinColour":2,"PinID":1913880116}],
       "InternalData":null
     }
   ],
@@ -168,31 +158,17 @@
     },
     {
       "SourcePinAddress":{
-        "PinID":1913880116,
-        "PinOwnerID":152343941
-      },
-      "TargetPinAddress":{
-        "PinID":373910735,
-        "PinOwnerID":339550672
-      },
-      "ConnectionType":1,
-      "ConnectedWireIndex":4,
-      "ConnectedWireSegmentIndex":0,
-      "Points":[{"x":-3.25,"y":-0.1875},{"x":0.0,"y":0.0}]
-    },
-    {
-      "SourcePinAddress":{
-        "PinID":1913880116,
-        "PinOwnerID":339550672
+        "PinID":0,
+        "PinOwnerID":188600918
       },
       "TargetPinAddress":{
         "PinID":54145089,
         "PinOwnerID":282692864
       },
-      "ConnectionType":0,
-      "ConnectedWireIndex":-1,
-      "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":0.1875,"y":-0.1875},{"x":0.1875,"y":0.0},{"x":0.0,"y":0.0}]
+      "ConnectionType":1,
+      "ConnectedWireIndex":3,
+      "ConnectedWireSegmentIndex":0,
+      "Points":[{"x":-4.4375,"y":-0.1875},{"x":-4.4375,"y":-0.5625},{"x":0.3125,"y":-0.5625},{"x":0.3125,"y":0.0},{"x":0.0,"y":0.0}]
     }
   ],
   "Displays":[]
