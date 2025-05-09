@@ -63,7 +63,7 @@
   ],
   "SubChips":[
     {
-      "Name":"D-LATCH-ENABLE",
+      "Name":"D-FF-ENABLE",
       "ID":1774523452,
       "Label":"",
       "Position":{

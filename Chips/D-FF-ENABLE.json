@@ -1,10 +1,10 @@
 {
   "DLSVersion": "2.1.6",
-  "Name": "D-LATCH-ENABLE",
+  "Name": "D-FF-ENABLE",
   "NameLocation": 0,
   "ChipType": 0,
   "Size": {
-    "x": 2.225,
+    "x": 1.775,
     "y": 0.75
   },
   "Colour": {
