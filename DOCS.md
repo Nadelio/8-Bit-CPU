@@ -21,7 +21,7 @@ Instruction | Bytecode | Assembly |
 `JUMP-WITH-DYNAMIC` | 208 | `jmp r0` |
 
 ### Bytecode Math
-`str` instructions always are `4 + <dist> + <reg?>`, if you are storing a literal value, you do not add it.\
+`str` instructions always are `4 + <dist> + <reg?>`, *except when storing to the output register, in which case it is `8 + <reg>`*. If you are storing a literal value, you do not add it.\
 `read` instructions are either `22 + <dist>`, `132 + <dist>`, or `68 + <dist>`, depending on where you are [reading from](DOCS.md#L16).[^note^](DOCS.md#L57)\
 `jmp` instructions always are `192 + 16?`, if you are storing a literal value, do not add anything to the 192, if you are doing a dynamic jump instruction, add 16 to the 192.\
 [Register bytecode values are shown below.](#registers)
