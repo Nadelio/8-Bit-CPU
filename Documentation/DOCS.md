@@ -1,6 +1,6 @@
 # 8-Bit CPU Documentation
 
-![Fig 2](CPU-8-final.png)
+![Fig 1](..\Additional%20Media\CPU-8-final-final.png)
 
 ### Assembly and Bytecode Instructions
 Instruction | Bytecode | Assembly |
@@ -21,7 +21,7 @@ Instruction | Bytecode | Assembly |
 `JUMP-WITH-DYNAMIC` | 208 | `jmp r0` |
 
 ### Bytecode Math
-`str` instructions always are `4 + <dist> + <reg?>`, *except when storing to the output register, in which case it is `8 + <reg>`*. If you are storing a literal value, you do not add it.\
+`str` instructions always are `4 + <dist> + <reg?>`, *except when storing to the output register, in which case it is `8 + <reg>`*. If you are storing a literal value, you do not add the register value.\
 `read` instructions are either `22 + <dist>`, `132 + <dist>`, or `68 + <dist>`, depending on where you are [reading from](DOCS.md#L16).[^note^](DOCS.md#L57)\
 `jmp` instructions always are `192 + 16?`, if you are storing a literal value, do not add anything to the 192, if you are doing a dynamic jump instruction, add 16 to the 192.\
 [Register bytecode values are shown below.](#registers)
@@ -42,12 +42,12 @@ Assembly Registers | Informal Names | Size | Perms | Bytecode Value |
 ### CPU Pins
 CPU Pins | Operation | Notes |
 ---- | --------- | ----- |
-0-1 | ALU/RAM Register Multiplexer OP | 0 is nop, 1 is operand register, 2 is low byte register, 3 is high byte register |
+0-1 | ALU/RAM Register Multiplexer OP | 0 is none, 1 is operand register, 2 is low byte register, 3 is high byte register |
 2 | ALU/RAM Register Store | Store in current selected sub-register the byte given from the DATA wire, truncates high bits if storing in operand register |
 3 | Output Register Write | Register will write zero if both pin 3 and 4 are high, do not pull 3 and 4 high at the same time |
 4 | Output Register Read | Register will read zero if both pin 3 and 4 are high, do not pull 3 and 4 high at the same time |
 5 | Choose between ALU Register or RAM Register | High is ALU, Low is RAM |
-6-7 | 0 is nop, 1 is read RAM to output bus, 2 is read ALU to output bus, 3 is read DATA wire into program counter |  |
+6-7 | 0 is none, 1 is read RAM to output bus, 2 is read ALU to output bus, 3 is read DATA wire into program counter |  |
 
 ### Additional Notes
 Operand Register is a 4-bit register.\

@@ -1,5 +1,5 @@
 # 8-Bit CPU
-![CPU Schematic](CPU-8-final.png)
+![CPU Schematic](Additional%20Media\CPU-8-final-final.png)
 
 \
 This project is a simple 8-bit CPU built inside of [Sebastian Lague's Digital Logic Simulator](https://github.com/SebLague/Digital-Logic-Sim).\
