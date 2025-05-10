@@ -67,7 +67,7 @@
       },
       "BitCount":8,
       "Colour":1,
-      "ValueDisplayMode":1
+      "ValueDisplayMode":3
     },
     {
       "Name":"DEBUG",

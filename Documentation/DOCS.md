@@ -47,8 +47,8 @@ CPU Pins | Operation | Notes |
 2 | ALU/RAM Register Store | Store in current selected sub-register the byte given from the DATA wire, truncates high bits if storing in operand register |
 3 | Output Register Write | Register will write zero if both pin 3 and 4 are high, do not pull 3 and 4 high at the same time |
 4 | Output Register Read | Register will read zero if both pin 3 and 4 are high, do not pull 3 and 4 high at the same time |
-5 | Choose between ALU Register or RAM Register | High is ALU, Low is RAM |
-6-7 | 0 is none, 1 is read RAM to output bus, 2 is read ALU to output bus, 3 is read DATA wire into program counter |  |
+5 | Choose between writing to the ALU Registers or RAM Registers | High is ALU, Low is RAM |
+6-7 | Choose between writing to Program Counter, reading from ALU, or reading from RAM | 0 is none, 1 is read RAM to output bus, 2 is read ALU to output bus, 3 is read DATA wire into Program Counter |
 
 ### ALU Operations
 | Assembly Instruction | Bytecode | Explanation |
