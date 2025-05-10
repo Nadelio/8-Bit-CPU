@@ -21,7 +21,8 @@ Instruction | Bytecode | Assembly |
 `JUMP-WITH-DYNAMIC` | 208 | `jmp r0` |
 
 ### Bytecode Math
-`str` instructions always are `4 + <dist> + <reg?>`, *except when storing to the output register, in which case it is `8 + <reg>`*. If you are storing a literal value, you do not add the register value.\
+`str` instructions can only store from a readable register to the output register or from the output register to a writable register if you are not using a literal value. This makes the instruction bytecode either `8 + <readable-reg>` or `16 + <writeable-register>`.\
+If you are storing a literal value in a register, use `4 + <register>`. If you are trying to store a literal in the output register, use the ALU pass-through operation and then store to ALU output to output register.\
 `read` instructions are either `22 + <dist>`, `132 + <dist>`, or `68 + <dist>`, depending on where you are [reading from](DOCS.md#L16).[^note^](DOCS.md#L57)\
 `jmp` instructions always are `192 + 16?`, if you are storing a literal value, do not add anything to the 192, if you are doing a dynamic jump instruction, add 16 to the 192.\
 [Register bytecode values are shown below.](#registers)
@@ -49,9 +50,23 @@ CPU Pins | Operation | Notes |
 5 | Choose between ALU Register or RAM Register | High is ALU, Low is RAM |
 6-7 | 0 is none, 1 is read RAM to output bus, 2 is read ALU to output bus, 3 is read DATA wire into program counter |  |
 
+### ALU Operations
+| Assembly Instruction | Bytecode | Explanation |
+|-----------------------|----------|-------------|
+| `PASS`                | `0`      | Pass `A` byte through |
+| `SUB`                | `1`      | Subtract `B` byte from `A` byte |
+| `ADD`                | `2`      | Add `A` and `B` bytes together |
+| `MUL`                | `3`      | Multiplies the lower halves of the `A` and `B` bytes together |
+| `AND`                | `4`      | Performs a bitwise `AND` operation between `A` and `B` bytes |
+| `XOR`                | `5`      | Performs a bitwise `XOR` operation between `A` and `B` bytes |
+| `OR`                 | `6`      | Performs a bitwise `OR` operation between `A` and `B` bytes |
+| `NOT`                | `7`      | Performs a bitwise `NOT` operation on the `A` byte. |
+
 ### Additional Notes
 Operand Register is a 4-bit register.\
 There are two ROMs, an Instruction ROM and a Data ROM.\
 The Data ROM contains static data to be read into the CPU during runtime.\
 The output register will override the input of the Data ROM if the Instruction ROM gives a `READ-OUTPUT-REG` signal (CPU pin 4 is pulled high).\
-`read` and `str` instructions are essentially the same thing, just `str` instructions can take in *static data*, or data from the Data ROM. `read` instructions *only* take in data from other registers.
+`read` and `str` instructions are essentially the same thing, just `str` instructions can take in *static data*, or data from the Data ROM. `read` instructions *only* take in data from other registers.\
+The ALU `A` byte is stored in the high byte register, the `B` byte is stored in the low byte register.\
+Due to hardware design choices, the `output` register (`r0`) cannot be written to and read from at the same time or else it will zero out the register. Pass through operations for the `output` register must take up 2 individual instructions. *This may be changed in the future through the use of a 2-bit decoder.*
