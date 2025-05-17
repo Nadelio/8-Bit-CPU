@@ -1,5 +1,5 @@
 # 8-Bit CPU
-![CPU Schematic](Additional%20Media\CPU-8-final-final.png)
+![CPU Schematic](https://github.com/Nadelio/8-Bit-CPU/blob/main/Additional%20Media/CPU-8-final-final.png)
 
 \
 This project is a simple 8-bit CPU built inside of [Sebastian Lague's Digital Logic Simulator](https://github.com/SebLague/Digital-Logic-Sim).\
@@ -16,4 +16,4 @@ The CPU features:
 - Static values (Data ROM)
 - Harvard style architecture
 
-Full documentation for the CPU is avaliable [here](https://github.com/Nadelio/8-Bit-CPU/blob/main/DOCS.md)
+Full documentation for the CPU is avaliable [here](https://github.com/Nadelio/8-Bit-CPU/blob/main/Documentation/DOCS.md)
